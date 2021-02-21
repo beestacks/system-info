@@ -15,7 +15,7 @@ function dealMem(mem) {
   (mem>(1<<20))&&(mem<(1<<30))&&(M=(mem/(1<<20)).toFixed(2));
   (mem>(1<<10))&&(mem>(1<<20))&&(KB=(mem/(1<<10)).toFixed(2));
   return G>0?G+'GB':M>0?M+'MB':KB>0?KB+'KB':mem+'B';
-};
+}
 
 console.log("内存大小："+dealMem(totalMem)+' 空闲内存：'+dealMem(freeMem));
 
